@@ -1,0 +1,142 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* background-color: blue; */
+}
+
+/*/* ---TOP_BAR--- */
+.MAIN {
+    width: 375px;
+    height: 780px;
+    margin: auto;
+    padding-top: 10px;
+    /* background-color: green; */
+    border-radius: 30px;
+}
+
+
+
+.header {
+    width: 360px;
+    height: 70px;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+    margin-left: 4px;
+    background-color: skyblue;
+    -webkit-box-shadow: 0px 1px 2px 2px rgb(31, 29, 29);
+    -moz-box-shadow: 0px 1px 2px 2px rgb(31, 29, 29);
+    box-shadow: 0px 1px 2px 2px aliceblue;
+    border-radius: 10px;
+}
+.header h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    margin-top: 10px;
+    margin: auto;
+}
+
+
+.contain {
+    width: 349px;
+    height: 590px;
+    display: block;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+    margin-top: 10px;
+    margin-left: 5px;
+    padding-top: 60px;
+    padding-left: 10px;
+    background-color: skyblue;
+    -webkit-box-shadow: 0px 1px 2px 2px rgb(31, 29, 29);
+    -moz-box-shadow: 0px 1px 2px 2px rgb(31, 29, 29);
+    box-shadow: 0px 1px 2px 2px aliceblue;
+    border-radius: 10px;
+}
+
+.contain .btnOpen {
+    margin-top: 0px;
+}
+.contain .btnStop {
+    margin-top: 50px;
+}
+.contain .btnClose {
+    margin-top: 50px;
+}
+
+.contain .button {
+    color: #ecf0f1;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    width: 180px;
+    height: 140px;
+    border-radius: 20px;
+    padding: 2px;
+    /* margin-left: 200px; */
+    transition: all .1s;
+    margin-left: 85px;
+}
+.button:active {
+    position: relative;
+    top: 2px;
+}
+.contain #button_open {
+    background-color: green;
+    border: 1px solid #ffffff;
+    box-shadow: 0px 10px 0px green;
+}
+.contain #button_open:active {
+    box-shadow: 0px 2px 0px yellow;
+}
+.contain #button_stop {
+    background-color: red;
+    border: 1px solid #ffffff;
+    box-shadow: 0px 10px 0px red;
+}
+.contain #button_stop:active {
+    box-shadow: 0px 2px 0px yellow;
+}
+
+.contain #button_close {
+    background-color: green;
+    border: 1px solid #ffffff;
+    box-shadow: 0px 10px 0px green;
+}
+.contain #button_close:active {
+    box-shadow: 0px 2px 0px yellow;
+}
+
+.footer {
+    width: 360px;
+    height: 40px;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+    margin-top: 10px;
+    margin-left: 4px;
+    background-color: skyblue;
+    -webkit-box-shadow: 0px 1px 2px 2px rgb(31, 29, 29);
+    -moz-box-shadow: 0px 1px 2px 2px rgb(31, 29, 29);
+    box-shadow: 0px 1px 2px 2px aliceblue;
+    border-radius: 10px;
+}
+.footer h2 { 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    color: aliceblue;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+}

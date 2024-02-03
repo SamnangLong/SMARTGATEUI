@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Gate Control</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="IMPROTEK.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Battambang:wght@100&family=Moul&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js" type="text/javascript"></script>
+    <script src="js/script.js"></script>
+
+    <style>
+        h1{
+            font-family: Battambang;
+            font-size: 21px;
+            font-weight: bold;
+        }
+        .fa-duotone{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="MAIN">
+        <div class="header">
+            <h1>SMART GATE CONTROL</h1>
+        </div>
+
+        
+        <div class="contain">
+
+
+            <div class="btnOpen">
+                
+                <button class="button" id="button_open" onclick="ButtonOpen()">OPEN
+                    
+                    <label id="label_open"></label>
+                    <h1>បើកទ្វា</h1>
+                    
+                </button>
+            </div>
+
+
+            <div class="btnStop">
+                
+                <button class="button" id="button_stop" onclick="ButtonStop()">STOP
+                    <label id="label_open"></label>
+                    <a href="setting.html" target="_self" style="text-decoration: none;" ></a>
+                    <h1>បញ្ឃប់</h1>
+                </button>
+
+            </div>
+
+            <div class="btnClose">
+
+                <button class="button" id="button_close" onclick="ButtonClose()">CLOSE 
+                    <label id="label_open"></label>
+                    <h1>បិទទ្វា</h1>
+                </button>
+
+            </div>
+        </div>
+
+
+        <div class="footer">
+            <h2>POWERBY:  IMPROTEK</h2>
+        </div>
+    </div>
+
+
+    <!-- FUNCTION FULL SCREEN -->
+    <!-- <script>
+        function toggleFullScreen() {
+        const elem = document.documentElement;
+
+        if (!document.fullscreenElement && !document.mozFullScreenElement &&
+            !document.webkitFullscreenElement && !document.msFullscreenElement) {
+        if (elem.requestFullscreen) {
+            elem.requestFullscreen();
+        } else if (elem.mozRequestFullScreen) { /* Firefox */
+            elem.mozRequestFullScreen();
+        } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+            elem.webkitRequestFullscreen();
+        } else if (elem.msRequestFullscreen) { /* IE/Edge */
+            elem.msRequestFullscreen();
+        }
+        } 
+
+        }
+        document.addEventListener('click', function() {
+          toggleFullScreen();
+        });
+        
+      </script> --> 
+    
+</body>
+</html>
